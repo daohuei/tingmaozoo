@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #Gmap {
+        height: 80%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="getLocation()">定位</button>
+    <div id="demo"></div>
+    地址:
+    <input type="text" name="address" id="address">
+    <button onclick="myFunction()">開地圖</button>
+    <div id="demo2">
+        <iframe src="http://maps.google.com.tw/maps?f=q&hl=zh-TW&q=鄉林凱撒&z=20&t=q&output=embed" frameborder="0" height="600" width="800"></iframe>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("address").value;
+        document.getElementById('demo2').innerHTML = '<iframe src="http://maps.google.com.tw/maps?f=q&hl=zh-TW&q=' + x + '&z=20&t=q&output=embed" frameborder="0" height="600" width="800"></iframe>';
+    }
+    </script>
+    <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        var a = position.coords.latitude;
+        var b = position.coords.longitude;
+        document.getElementById('demo').innerHTML = '<iframe src="http://maps.google.com.tw/maps?f=q&hl=zh-TW&q=' + a + ',' + b + '&z=20&t=q&output=embed" frameborder="0" height="600" width="800"></iframe>';
+    }
+    </script>
+    <div id="Gmap"></div>
+        <script type="text/javascript">
+    // 取得網址裡的參數 
+    function GetUrlVar(VarName) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.location.href);
+        if (results == null)
+            return "";
+        else
+            return results[1];
+    }
+    </script>
+    <script>
+    var aa=Number(decodeURIComponent(GetUrlVar('a')));
+    var bb=Number(decodeURIComponent(GetUrlVar('b')));
+    var myLatLng = { lat: aa, lng: bb };
+    var map;
+    var marker;
+
+    function initMap() {
+
+        map = new google.maps.Map(document.getElementById('Gmap'), {
+            center: myLatLng,
+            zoom: 5
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Black Forest'
+        });
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+</body>
+
+</html>
