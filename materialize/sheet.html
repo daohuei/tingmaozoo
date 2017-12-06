@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script type="text/javascript">
+function formresponse() {
+	var a = document.forms["form1"]["animal"].value;
+	var w = document.forms["form1"]["weight"].value;
+	var y = document.forms["form1"]["age"].value;
+	var h = document.forms["form1"]["habitat"].value;
+	var p = document.forms["form1"]["picture"].value;
+	if (a==null || a=="")
+	   {
+		alert("動物不可為空白!");
+		return false;
+	   }
+	else if (w==null || w=="")
+	   {
+		alert("體重不可為空白!");
+		return false;
+	   }
+	else if (y==null || y=="")
+	   {
+		alert("年齡不可為空白!");
+		return false;
+	   }
+	else if (h==null || h=="")
+	   {
+		alert("棲息地不可為空白!");
+		return false;
+	   }
+	else if (p==null || p=="")
+	   {
+		alert("照片URL不可為空白!");
+		return false;
+	   }
+	else
+	   {
+		var MySubmit = "https://docs.google.com/forms/d/e/1FAIpQLSeMseR_gv8MPuKi_3PheGj3MuYgM0mZFDX7qM0F6dCXOn1OGw/formResponse?entry.614765787=" + a + "&entry.4813253=" + w +"&entry.395446560=" + y +"&entry.800270576=" + h +"&entry.888691765=" + p + "&submit=Submit";
+		var NewOpen = window.open(MySubmit);
+	   }
+}
+</script>
+</head>
+<body>
+	<form name="form1" action="javascript:formresponse();">
+		動物: <input type="text" name="animal"><br />
+		體重: <input type="text" name="weight"><br />
+		年齡: <input type="text" name="age"><br />
+		棲息地: <input type="text" name="habitat"><br />
+		照片URL: <input type="text" name="picture"><br />
+		<input type="submit" value="提交">
+	</form>
+</body>

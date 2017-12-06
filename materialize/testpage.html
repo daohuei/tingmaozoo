@@ -1,0 +1,162 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <title>html</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+	
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	  <nav>
+    <div class="nav-wrapper light-blue accent-4">
+	
+      <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/0abfee44-Wild-Life-Sydney-Zoo-Discount-Entry/%E6%82%89%E5%B0%BC%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%9C%92%E9%96%80%E7%A5%A8.jpg" width="100%">
+      </div>
+      <a href="#!user"><img class="circle" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExIVFRUXFRUVFRUVFRUVFRcXFRUWFhUXFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQFy0dFRktKy0rKystKysrLS0tLS0tLSsrLS0tLS0tLSstLS0rLS0uKzcrLS0tLTcrLS0rKysrK//AABEIAN4A4wMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xAA6EAABAwIEAwUHBAICAQUAAAABAAIRAwQFEiExQVFhBhNxgZEiMkKhsdHwFFLB4QfxFSOCM0NUYnL/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QAIhEBAQACAgIDAAMBAAAAAAAAAAECEQMhBBITMUEiUWEy/9oADAMBAAIRAxEAPwACXpDVQx+JBQuxMKNphY1VG6ohBxMKJ2JIMMvrRqoLd0lBq+IzoupYjCIxpeCbmQFuKlMqYmVtAL16oJXPrANWfZfGVI+7LhCwr4r6qc1BxQBtYhc67K1KNPqBROrBBzclc2oho8XLghUagSklcGImQpaZ1UndJzKOqxcvpK1qfkClZTgKtcPhJohzgEwwqb6hSNqFPIyeoqZOqtOdIVfJxT4nwhQU2U6U0tRVNJTSpciaWrDUUrkuVcsQQFYrjKhldJ5qZEkHmuylREpMywaPcwpFzah5qQVgdwsJgKfnUjaId7p15FROYQYIWZwTs5ShqRzVh1o55kTy3UKkYYPRc9kFGAjUjnQt7/jfsoKjv1VYSxp9gESC4cSOQRftx2aZXb3lNobUiBEAGOaf1Lvt5SKiUVk+vZvZo4QdiOqrkJKZP3ymp1lUCe0rVqvGuh11W1U4UNWh8R2QhFeVwM7JjyVPaw3U78B91QdJqTY1PpxTKylDZMrnU1ml0qlcCpC1cGgLKzJGXqN9RTPo8zCjNMf2sFyMzpFxYuRL7VaAThTKRqdnUmKLdx2EpptXj4Hekpf1BUjLxwRZWLeH9fVc1XhiZ2c0OHVSB1u/cOpnm3UeizKCs0a86OEj5hWn4QSJpPbU6SGu9DofJUSwtdDgQeREH0W0MWn0IEt1bz5dCoS1T29aOGnH/SfUtwfaYZHFvxD7hJFcp0qFiJ9nsIN3XpUA7KXOgu5N3JHVDHFFuyl+aF1SqjUBwmN4nVPijXvtDDGUabaNMQxrco5/7QipS1LHHSEar1pAcDIInyPVD/0Ze6R1+artOA+J9n6NZgD2AmTB4ysZi/YNzQXU9QY02I5/wvWWYcY81Vr25EzqCPMHoltPHiTuyVwBmNPQtkQR6eKp1ez9w1zW907M73WjU+fLzXuTrUnRugg/NUmWhEz9BJ/OSFrV5Q7slcMAc9kDfcGB1hCrqnrlGw2+69ypWk7kzx/NlTvcLoE+21rjvtKXQaeKiwOkNknYRJ8VatOzFeo4NazU7g6R1XrTrSm0RSptb/8AbSfLkE+hSDWnLoeJPFGG0xND/H5y+3WaDyAn5ofivYmtSaX0yKoGpDdH+nHyW6u3x8UlPsS6Z18k8Cx4zUbG4y+Oh8I3UDrjkPPitv8A5MwtrHsuGtgVPZcOAcBuPEBYd50WsCUxziuc5MlK0lKP2kDlycGrkBckK5cUrEJTgEwJ7Ssx+QDc68h91wcP2+qjTg0ngiyalcRs0DwJBRe3xdjxkrMLxwJ1cPA7j1QPuzyPoU9oQ7HGdjtTB8zS+3d3jeLdO8aPDihrXFpkaEfkJ1rWcx2ZriCOIR+hUo3Xs1Yp1dhUGzjwzc/FT326dBFSiKgkCDtPCeTvup8BtB3oDxoDBGzh1aeauUez9fve7DZO+8Bw6FeiYN2fYGBzmDvQACSNTG081bH/AFz8n+DeFuLaLQSSBprvHCUewx7csgg9Vgu0faVtqAwNz1HZS1pMNE6e0eH9Ih2Wq1/+wVCzVwINJ4fTgge64cNU0qNjaPq7+qq14jU8NFFUq6KlUuZn6Kdy3TyagjQbPrp15krjZglQ0KsNEnx+ysUa8+e35yCrjiS1VubeNB8hsEIxG3HAE6aACB1JWlc4DbU8yhOK0JHvEDoNEbIErN0A8zI04BPuZiPolcSNBtz4lRak8fVJFY7D8Ozu1WjbhzQAGodYWT55KrjXbG2spbLqtUfA3YHk5+w+aedEyZ//ACzQFO3pNcQS+rpG4ytcSfnHmvJ7lseBRjtRj9a9rd7VMAaNY33GDkOvMoMRpCFu2kQApW7pciUsQMXOuTch5JUG2kTXFOSEJBcE9rEgTgVmWKdNg1Ovj9grjL+m3/2wfzqCULieKsUagB0bJR2wtQxdp0FsHeU/RqtUbqi4+3aVAD+3b0cFDY1X8XED9rN/VGbW4rSMkD/9O+uqaXZUNLCbSp7lbIf21AG+UiW/RHMA7Cl7pqAFnCDM9Q4H6K/hOHVKxDalK3eDvMT101lel4ThdOiwNY0NA4BH0g/JQqzwenTa1oaIbo0nVw8CmXNIggsbJ2I4R+fytK+gCkFuBqAt6l286v8AsOLiuatZxAdENadoESD+e8juHYfToMFKmPZE+M6LSvtwUGuhBS8nUHDtBUqTooCY/n88VNlSOYRJ05a+uvT7KeJ8lHEcTZTaSfdaCXacf6WFu+1dzWa+vSe2jQYWtMGX+0SGw0kE8JgHdbHHsE7+i9jX5JENkEzzJA1krzK/7K1Lce0eGrmtLnHo0fANpV4k1XZntq8uFOrUzEzBboPB07Faq5xCRMg9NwPzmvIcCtM1UCnSfuPaeYjrAXpGG4c+AHtjzMLWtFoHMOXUH+E6k4M+IT1KuU7UbASNpiB6lPOH0/2ifAR6pZ9qfhlxVzMLTUiQfdMH6jXzXk3aXCHMeYkDq+R4+1r6L1oYaHaEgjllQrFuyVF4MMynm0Q71T76TeKVKUaTJ4iDp5ndVyF6Nf8AYHdzKjif2ujXzWIxPDX0XFr25SOoKXQ7USEhcuSNZpJ25rdCUPXKLulywJCVwU1tZvqGGtJRNvZyrG3yU9xTQQFyJVMEqj4VWfY1Bu0obBXlWLZ0a8/zdRuoOHAp9Jp5aIiKWZJ4wOQ0Wpwi3B1DQerjp89/JZW0eBofw9Ufw25lwAOn5+aJpS2PUuyNoPehunILYsKzfZsRRbpH5xRhtdU2mISklVGXSk71GVtHVHoNds9rdWq9WSIzcdI09VGygSSXTH0S2bNOjbahO/SFYqWwDdRqdP7XEgRMb6c58Ex1yeInlqPojMS21G22bxG3zVW6sQ/4QRy2V0HNv6FWWMPJGxtgLcLyD2WtHgNVzaQnafGVo+6CrfpxMhJqjKF/os28x0kJv/EMmYPmJR8Ukx9Pojpts9XoFo/9ORzbuhtS8pkxmfTPIjT5rT1aHEaeB+qF3tu13vNE84W0wJVZIkmR+4aFeedtsLcD3he5zTxiQD1jZej1hk8PzdDMUt21KTmRII/IQ2Oni9WkW9RwI1Hqm1H+zl6/7Vu7oGm97Dtrofr4oc8oabZq5NJXIg9MwixFFsQiHedEQNuOS4WQK4u3X/gY5wPBR9ww8EUfh6iNiUJaOoGPsGHgEw4Sw8B6ImbYpDSKbdLqBf8AwTTwV/CMIDHgiJ66/JTAkKe3qmfwJ8b2GWL0HD4FMDokr1IQ/DLuWBSXFRdG+kNdpm3as2t4CYMLP1aqiFyQp/JqqTDbXVboCNo/IUFW4jWY5nceHisw7ECOv5yTKWJknXYa9SU05pTfF0OuqlxNSpAaPdAmZ69E9lSdxr0P1CG0bmdSfDjurNGrtz+ip7bRuK+xxiT+fZXaVyQPvqPVUaeu28CeoU7eXPgeP8T0+iYmktS7PgfkVJRuOaH1SY0MjbKfpzB6KsaxA9nUcR8TfuEG00ffCFWrVJ4oC29PNTNuzzRBPcV3DfVD691P9qStXkan86oTdAjjC1E25uAQhjnxwV0EE6qlfnJqdQk0bbzftxSDa+nxAErMVDqtt25Ac1juGolYZ26zUkrk1KsD2v8AXNBI18SCP4U4qq7UsSdSOMy7UeH8obUtSyS0OLd+XOQNDv1XlY+R+V7vJ4U1vG9pxXTjVCG/qD1347+ac2uryy/TzssbjdX7XhCfoqTa4Tu9HNEFvu2photlRB3VdnW01FbO5LdAiYGYarPUnrRYZGWSfurY1PKaQVLfkJU1vhBOrtT+0c+qL2LWxmO5+iusrU2Ak6lcPL5mEys/oZLpkMUwss1boEDNeN1rsWxFpBEBY+7cJXnY+fffX46sOO+qxTxAK7QxISEBFMqZjoXr8fNftLLCNZb33y4q8bsELG0bsq/Rv/zmurHl258uNoHXHrsRwcPuOarPqTq3+/NUTc6Azy/PzmmVLjj6jnzVPYnqs1HeR4wk8PMcfJVTV4/6SNrA/fiE3sGkr6yhqVOBGimkncg+Q+qr1XgbnyR23qgLY1Gv8Krf1xlII/pWKlw3gIPyQu7rSOo3C220yHapw7rLwzeixb1sO00Fo5gnRY9zdUko0xKkSos+oatjsToqdaiODdI/NUarNJ38lTrMAPFeVnjJ9R7uPJf2sfiNgGEkQJ3k6ePih2RHO0jmhmu07A/wg4qrePd2xHzZNS/tRGmkLFMKgTpC6dPO2hE804PKfolAW0MqShX11R7CrwE+0OgHI/ys+0LS9l7Rrg57uHst6CJJHX7JoFoh33JU8QuzETuOalraEhCb86r5fyuPL3tdmEipXrE8VReJICu93O26X/jKu+X109AreN4uWVl0pcpFPNCiL0+6a5pghVs/Rez6WIWbWWQpWhVqRU7HbKsTyidtU7J5qyPv0USQlVmRLFhtXgU01hw+pEKsCUyqOKaZF9V1l1O5KZWqcZ9D/CouBSFyMzD1Pe/kh1/UgSDqpq1SEKvCSd1rm2mf7QPnbks64ItibyXE9duCFVAqYp5Isi5OlcmLp9b16YQu8aQ0vDSW84lHmtGsem6VkAdOQXmZ5yurDyLi80tbQ3lfh3bCC+eW4A6mFo6/Zii74Y8FqadNuUgNAHIABZ62xhrqppDcTMDQawJKrwyYzX9l5/JvJZvrQLX7HDXK8+aHVuy9du0OW+dUAiTEpw15K+ojMnmlTCqzd2HyVZ7HN3aR5L1UsB4KGrZtdu0HyW9Yb2rzJjkXwe6LQ4NPw8dtOC1VbAKLvgHloqbuzLBq1xH0WmLezPPvHh0EcI08dPTb0SVzxKM3uFFoEmYIg+GyHXFIFcPN4kyu3XhyyrWCXFNvtEa8DJ+imxHtAzhJPDSB80DrZgCAQPIobUDuJlXwy9MfWGmEyu6v1K+cmRuqwtktrOsqznVLnKWzSDuE3Ipy9Nc9JuE0jDYTiU0vTHvR22iuXKIuTZK2w0kJUVRydlSFqJap1gheIey0lGqsASszil3mBE6BPJstoHXboqpaEte5VfvlaJVxAXKMvC5MHb66pVmnYgc9VYo5ToB48155f1K7agZTDjqIjY9CVrqt4GU5LvaIGYcQeS8biytm9Kc2Mwm9r93dMptJn57rC4g4kH9PGbPmf15A9AmYhdDVtZ5g+6NR5DmUKpGtT9mgM5OuY6RPAyrzvtw5clq7cXVVxYX5oZ72Ub9At3gN6yuzSm5mSBDvD5ry2niVznLXlgjeevELX9lcY7tzm1ak5spBywAddF1cN1Qwy7bJ9ryKgfTI3V+lUBHRPcxdNwlXloYEoarVW3G40VWo7Lv+eajnx2HmW1e9tszSFkbumQYK2ZqBCMWsw4E8fsksVxuqyz1XdSHJWblsaKm+vG6nlHRK6EhC4uTTUUqJrlGU5xTJRZ0JIT5TS8JtATKlEJveJHOTaKXOo3FOLV2wlNCULxm4ysjiVibp8gjkjWOXmZ5g6aR5aFZyq7VWidqvVChIVh6ZATQtQZVynyjmuTE2+jsQxMMdEwOB6oFjuMOZTFZokHQlEccw4ljmukh20DUINhuBVC2K/tUhMM49JXlY9TTmzytptW+qhlOr3WZo9ok7joAorPHHVC9hpvDzq0kZWxzKWqyvAOcd206MjWBzXPbVrMLj/wBTQIbOpdz8FbGaiZtK+dTik4NfUdtG0eKfcV6tR2TLkAjM6ZAj9qFVKfdgmnUz1IiNNegQupiFcEjY7uBEI7F7H2VxNrh3ecOLQDM6nyWop1F4vglOf++k4DTVp4niQvTMEvnPptLpniuni5LftbC7mh+VFXpSCuaZCgoWrg4uNVzp+ExlHhAldGzhN9buZq2SEEv7qrG7fUrZXNMEELH4pShxEeBU8sJ9rceVt0zd3Xd8W6DXt7Cu4zdgEidlk767BOm65c67sYP0cQBCc68CyP6h4T/17kjWNYLsEJDdhZCniLgeisjEOq2qDR/q9dE2pcwUC/W8ZSuu5hEGho1ZU8oFY3UmESpVJMfkpoFEFHVE+yE2tUyiVXtq0ndPOkajq4IxxksBVet2Uou4EdQVprYTxV2nbkqie2Hd/j3NqysR0IVO5/xxdD3DTf8A+UH5hesWdrCvCl1RkLXhJ7C33/xz6hKveRSC5P2GiX1uHukugDyUDrgZMg3JjyU9eSYjRBL5+V4yc4C8X5NIWIsehjC1jZPEhYrF6tcU8xBLJgRMjqQvUaVJuTrxWWv7oNqagFuvBdGF77TuH9MUXUqJZUY5xcBqCZ1O6vWdM3bszmlsaSR7yt3legxxc1rRm6KuMY7yGtkRpI5dFXRRPDcPyvBzANzAZRsYK9PFQZRB04LzjCKdIcCQOZ481qcIqlxDRzT8eX8tRfjmptq7cExy4q6obZkBTLuxx0KGqsd2qsc4GV5bB3HgdPBbGrsstjZGyHJ/yfjv8nnt3gYmXOc/XoG+iFXuFtGwhbK/cGjisriF0SSAIXmZPTlBKlvCrupK89pTRRPJLswa6kFGKCJVqChDE0tLdKbqJ2CLYfgVVwkiAr2C2Tcwc4La06rcoGivhJfupZb/ABlLHAS0ySrpsMmsozUqBDrysqawhf5BuKVvZhD7R8nRT125inW1vBSZXsPWjWHly0WHtOk+P9LN2ziEYtLkozJO4NA10JwDidtFWtawO6MW1RirMoS41GLU9fRKiIeFyOy6dUt2kIdVwpm/JTvrFV6tYryMssftT45UNa00iVnce7umzKBqUVvLlw4rH45duzJ8M5kNwmGO2fu6DTvLtZMLsOk1CQ2GbdeiWoHmqBmgRwRW3py9rABPPx5q2Tz53Vug4khjNSeS9E7M4R3bQ53vH5Kr2V7PspjvDBcfQdAtW0Ls4OH1m7+r29OATXFOKr1nLpKiuq0BZe7OZxMq/i9zAQ6g3SVHmy1NL8GG7sPuLAu5HwQypgzSdvUT6LQVq2V7WETMwZ5bqQD8hcNjtlZCtg4HBVHYb0WyrUwqL6IQ0aVlamHzwUTcLHJaarRUBpLny5NXSsw32F0bfLsnVKxCummq1WmkuVPjIrfqHJpJKmFJPbTWueRvWIGUVZp0lIxilDVT5LIlcIWm0KzTeAqoSOch82TfFBNl3Cf/AMpHFZ+4rkBA8QxN0HdUw5cthlxY6bc9o2/uXLyB98+T7RSLs9nJ6x//2Q=="></a>
+      <a href="#!name"><span class="white-text name">Ting Mao</span></a>
+      <a href="#!email"><span class="white-text email">tingmaorock@gmail.com</span></a>
+    </div></li>
+    <li><a href="AnimalCard.html"><i class="material-icons">cloud</i>Animal Card</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMseR_gv8MPuKi_3PheGj3MuYgM0mZFDX7qM0F6dCXOn1OGw/viewform"><i class="material-icons">cloud</i>Sheet</a></li>
+    <li><a href="testpage.html"><i class="material-icons">cloud</i>TestPage</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="index.html" class="brand-logo center">Tingmao Zoo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="preload">
+    <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+  setTimeout(function(){ document.getElementById("preload").innerHTML = '<h1 style="font-family:Microsoft JhengHei">為什麼collapsible用在inner會沒效果???</h1>'; }, 3000);
+  </script>
+    
+  
+   <div class="row" id="demo"></div>
+    <script type='text/javascript'>
+      var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1dCJlRPiTTprvL-YG5dnG_eZ1sCs6FfhbcOnNHK01ZfY/edit?usp=sharing';
+
+      function init() {
+        Tabletop.init({
+          key: publicSpreadsheetUrl,
+          callback: showInfo,
+          simpleSheet: true
+        })
+      }
+
+      function showInfo(data, tabletop) {
+        //alert('Successfully processed!')
+        console.log(data);
+        var text = "";
+        for (var i = 0; i < data.length; i++) {
+          // 於Google Spreadsheet建立的範例資料A欄命名為animal、B欄命名為weight、c欄命名為age、d欄命名為habitat
+          text += '<div class="col s12 m4">';
+          text += '<div class="card">';
+          text += '<div class="card-image" id=myPic' + (i+1) + '>';
+          text += '<img src=' + data[i].picture + ' width="400px" height="600px">';
+          text += '<span class="card-title">' + data[i].animal + '</span>';
+          text += '</div>';
+          text += '<div class="card-content">';
+          text += '<p>體重:' + data[i].weight + '公斤</p>';
+          text += '<p>年齡:' + data[i].age + '歲</p>';
+          text += '<p>棲息地:' + data[i].habitat + '</p>';
+          text += '</div>';
+          text += '<div class="card-action">';
+          text += '<ul class="collapsible" data-collapsible="accordion">';
+          text += '<li>';
+          text += '<div class="collapsible-header"><i class="material-icons">filter_drama</i>'+data[i].animal+'</div>';
+          text += '<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>';
+          text += '</li>';
+          text += '</ul>';
+          text += '</div>';
+          text += '</div>';
+          text += '</div>';
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      window.addEventListener('DOMContentLoaded', init)
+
+    </script>
+	  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+      <footer class="page-footer light-blue accent-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Tingmao Zoo</h5>
+            <p class="grey-text text-lighten-4">You can pay US$10000 to visit.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Tingmao
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+  <script>
+	$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+  </script>  
+    <script>
+   // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+  </script>
+
+    </body>
+  </html>
